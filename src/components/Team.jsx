@@ -41,17 +41,17 @@ function Team({disp,setDisp}){
     }
  return(
     <>
-    <h1 className={`${disp==='none'?'hidden':""} text-center text-2xl mt-5`}>Welcome to TicTacToe </h1>
-    <div className={`${disp==='none'?'hidden':""} flex flex-col min-h-screen justify-center items-center gap-5 `}>
+    <h1 className={`${disp==='none'?'hidden':""} text-center text-4xl font-bold mt-8 text-gray-800`}>Welcome to TicTacToe</h1>
+    <div className={`${disp==='none'?'hidden':""} flex flex-col min-h-screen justify-center items-center gap-8 bg-lr from-blue-50 to-purple-50`}>
       <div>
-        <input type="text" id="enter" onChange={(e)=>setide(e.target.value)} className="p-3 border-2 m-5" placeholder="Room No"/>
+        <input type="text" id="enter" onChange={(e)=>setide(e.target.value)} className="p-4 border-2 border-gray-300 m-5 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent w-64" placeholder="Room No"/>
       </div>
       <div>
-        <button id="create" onClick={CreateGame} className="border-2 p-3">Create Room</button>
-        <input type="text" id="enter"  className="p-3 border-2 m-5" placeholder="RoomNo"/>
+        <button id="create" onClick={CreateGame} className="border-2 border-blue-500 bg-blue-500 text-white p-4 rounded-lg font-semibold hover:bg-blue-600 hover:border-blue-600 transition-all shadow-md hover:shadow-lg">Create Room</button>
+        
       </div>
       <div>
-        <button id="btn" onClick={JoinGame} className="border-2 p-3">Join</button>
+        <button id="btn" onClick={JoinGame} className="border-2 border-blue-500 bg-blue-500 text-white p-4 rounded-lg font-semibold hover:bg-blue-600 hover:border-blue-600 transition-all shadow-md hover:shadow-lg px-8">Join</button>
       </div>
     </div>
     </>
